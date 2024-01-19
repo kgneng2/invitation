@@ -2,6 +2,7 @@ import * as React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
 
 import './styles.scss';
+import Dday from '../component/Dday';
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -35,18 +36,21 @@ const IndexPage: React.FC<PageProps> = () => {
             <div className='bottom'>
               <div className='name'>
                 <div className='groom'>강준영</div>
-                <div className='divider'></div>
+                <span> ❤️ </span>
+                {/* <div className='divider'></div> */}
                 <div className='bride'>최산하</div>
               </div>
               <div className='datetime'>
-                " 2024년 8월 25일 일요일 "<span>오후 12시 30분</span>
-                <br></br>
-                <div>양재 AT포레 웨딩홀</div>
+                2024년 8월 25일 일요일
+                <span> 오후 12시 30분 </span>
               </div>
+              <div>양재 AT 포레 웨딩홀</div>
             </div>
           </div>
         </div>
       </div>
+
+      <Dday />
     </div>
   );
 };
