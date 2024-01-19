@@ -24,7 +24,7 @@ const IndexPage: React.FC<PageProps> = () => {
               <div className='photo-wrap simple'>
                 <div className='intro-blend-wrap photo gradient-none'>
                   <img
-                    src='../images/main.JPG'
+                    src='https://github.com/kgneng2/invitation/blob/main/src/images/main.jpg?raw=true'
                     width='627'
                     height='853'
                     className='intro-blend-image img-blur'
