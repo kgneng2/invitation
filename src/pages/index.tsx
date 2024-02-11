@@ -8,6 +8,7 @@ import Intro from '../component/Intro';
 import Contact from '../component/Contact';
 import Calendar from '../component/Calendar';
 import Photos from '../component/Photo';
+import Attendance from '../component/Attendance';
 
 const IndexPage: React.FC<PageProps> = () => (
   <>
@@ -17,6 +18,7 @@ const IndexPage: React.FC<PageProps> = () => (
       <Calendar />
       <Photos />
       <Map />
+      <Attendance />
     </div>
   </>
 );
