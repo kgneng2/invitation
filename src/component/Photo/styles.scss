@@ -1,0 +1,13 @@
+.slider-container {
+  width: 100%; /* 브라우저 너비에 맞게 설정 */
+  max-width: 1200px; /* 슬라이더의 최대 너비 설정 */
+  margin: 0 auto; /* 가운데 정렬 */
+}
+
+.photo {
+  .title {
+    margin: 1px 0;
+    padding: 40px 0;
+    font-size: 20px
+  }
+}

@@ -14,7 +14,7 @@ const Dday = () => {
     }, 1000);
 
     return () => clearInterval(intervalId);
-  }, [targetDate]);
+  }, []);
 
   function calculateRemainingTime(targetDate: Date): {
     days: number;
