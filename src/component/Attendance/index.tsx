@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const Attendance = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [name, setName] = useState<string>('');
+  const [message, setMessage] = useState<string>('');
   const [attendance, setAttendance] = useState<boolean>(true);
   const [isBride, setIsBride] = useState<boolean>(false);
 
@@ -16,10 +17,14 @@ const Attendance = () => {
 
   return (
     <div>
-      <button onClick={(e) => setIsOpen(!isOpen)}> 참석 여부 전달하기</button>
+      <div>
+        안전한 예식 준비를 위해 참석자 자리를 충분히 마련하고자 합니다. 부담
+        갖지 마시고, 참석 의사 및 전하실 말씀을 남겨주시면 감사하겠습니다.
+      </div>
+      <button onClick={(e) => setIsOpen(!isOpen)}> 참석 여부 체크</button>
       {isOpen && (
         <div>
-          <h1>참석 여부를 알려주세요</h1>
+          <h3>참석 여부를 알려주세요</h3>
           <form onSubmit={handleSubmit}>
             <label>
               <label>
@@ -72,6 +77,15 @@ const Attendance = () => {
                 />
                 참석하지 않음
               </label>
+            </label>
+            <br />
+            <label>
+              전하실 말씀:
+              <input
+                type='text'
+                value={name}
+                onChange={(e) => setMessage(e.target.value)}
+              />
             </label>
             <br />
             <button type='submit'>전달</button>
