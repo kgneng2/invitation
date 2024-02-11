@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.scss';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Intro = () => {
   return (
@@ -16,12 +17,13 @@ const Intro = () => {
         <div>
           <div className='photo-wrap simple'>
             <div className='intro-blend-wrap photo gradient-none'>
-              <img
-                src='https://github.com/kgneng2/invitation/blob/main/src/images/main.jpg?raw=true'
-                width='627'
-                height='853'
+              <StaticImage
+                src='../../images/main.jpg'
+                alt=''
+                width={627}
+                height={853}
                 className='intro-blend-image img-blur'
-              ></img>
+              ></StaticImage>
             </div>
           </div>
         </div>

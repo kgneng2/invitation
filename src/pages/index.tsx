@@ -15,8 +15,8 @@ const IndexPage: React.FC<PageProps> = () => (
       <Intro />
       <Contact />
       <Calendar />
-      <Map />
       <Photos />
+      <Map />
     </div>
   </>
 );

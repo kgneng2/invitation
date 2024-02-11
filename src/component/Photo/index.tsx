@@ -5,31 +5,6 @@ import './styles.scss';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const Photos = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     allFile(filter: { name: { regex: "/p[0-9]/" } }) {
-  //       nodes {
-  //         publicURL
-  //         name
-  //         extension
-  //       }
-  //     }
-  //   }
-  // `);
-
-  // const imageList = data.allFile.nodes.map((node: any) => ({
-  //   src: node.publicURL,
-  //   alt: node.name,
-  // }));
-
-  // const settings = {
-  //   dots: true,
-  //   infinite: false,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   autoplay: false,
-  // };
-
   return (
     <div className='photo'>
       <div className='title'>Photo</div>
@@ -62,6 +37,32 @@ const Photos = () => {
 };
 
 export default Photos;
+
+
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     allFile(filter: { name: { regex: "/p[0-9]/" } }) {
+  //       nodes {
+  //         publicURL
+  //         name
+  //         extension
+  //       }
+  //     }
+  //   }
+  // `);
+
+  // const imageList = data.allFile.nodes.map((node: any) => ({
+  //   src: node.publicURL,
+  //   alt: node.name,
+  // }));
+
+  // const settings = {
+  //   dots: true,
+  //   infinite: false,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: false,
+  // };
 // <div className='slider-container'>
 //   <Slider {...settings}>
 //     {imageList.map((value: any, index: number) => (
